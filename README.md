@@ -1,6 +1,3 @@
- <div class="header">
-      <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=A3DCBE&text=SuYoung's%20GitHub%20&height=150&fontSize=60&descAlignY=75&descAlign=60" alt="YeonJin's GitHub">
-    </div>
 <!--내용 부분-->
 <h3 align="center">✨ Tech Stack ✨</h3>
 <div align="center">
