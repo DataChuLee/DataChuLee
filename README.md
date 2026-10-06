@@ -18,7 +18,7 @@
 
 <br>
 
-<p><b>AI Engineer · AI Agent · RAG</b></p>
+<p><b>AI Engineer | AI Agents, RAG &amp; Ontology</b></p>
 
 </div>
 
