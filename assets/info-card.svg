@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520"><rect width="100%" height="100%" rx="18" fill="#0d1117" stroke="#30363d"/><text x="40" y="70" fill="#7ee787" font-family="monospace" font-size="22">$ developer_info.sh</text><text x="40" y="120" fill="#c9d1d9" font-family="monospace" font-size="18">USER DataChuLee</text><text x="40" y="165" fill="#c9d1d9" font-family="monospace" font-size="18">ROLE AI Engineer</text><text x="40" y="210" fill="#c9d1d9" font-family="monospace" font-size="18">FOCUS AI Agent · RAG · LangGraph</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520">
+<style>
+  .panel { fill:#0d1117; stroke:#30363d; stroke-width:2; }
+  .bar { fill:#161b22; }
+  .dot1 { fill:#ff5f56; } .dot2 { fill:#ffbd2e; } .dot3 { fill:#27c93f; }
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .title { fill:#7ee787; font-size:23px; font-weight:700; }
+  .sub { fill:#8b949e; font-size:15px; }
+  .row { fill:#c9d1d9; font-size:18px; opacity:0; animation:reveal .45s ease forwards; }
+  .label { fill:#58a6ff; font-weight:700; }
+  .value { fill:#c9d1d9; }
+  .cursor { fill:#7ee787; animation:blink 1s steps(1) infinite; }
+  @keyframes reveal { from {opacity:0; transform:translateY(8px)} to {opacity:1; transform:translateY(0)} }
+  @keyframes blink { 50% {opacity:0} }
+</style>
+<rect class="panel" x="1" y="1" width="718" height="518" rx="18"/>
+<rect class="bar" x="2" y="2" width="716" height="62" rx="17"/>
+<circle class="dot1" cx="32" cy="32" r="8"/><circle class="dot2" cx="58" cy="32" r="8"/><circle class="dot3" cx="84" cy="32" r="8"/>
+<text x="120" y="39" class="sub">datachulee@github — whoami</text>
+<text x="54" y="112" class="title">$ ./developer_info.sh</text>
+<text x="54" y="160" class="row" style="animation-delay:0.35s"><tspan class="label">USER  </tspan><tspan dx="20" class="value">DataChuLee</tspan></text><text x="54" y="214" class="row" style="animation-delay:0.48s"><tspan class="label">ROLE  </tspan><tspan dx="20" class="value">AI Engineer</tspan></text><text x="54" y="268" class="row" style="animation-delay:0.61s"><tspan class="label">FOCUS </tspan><tspan dx="20" class="value">AI Agent · RAG · LangGraph</tspan></text><text x="54" y="322" class="row" style="animation-delay:0.74s"><tspan class="label">STACK </tspan><tspan dx="20" class="value">Python · FastAPI · Redis · FAISS</tspan></text><text x="54" y="376" class="row" style="animation-delay:0.87s"><tspan class="label">EVAL  </tspan><tspan dx="20" class="value">Hit@K · MRR · Latency · Regression</tspan></text><text x="54" y="430" class="row" style="animation-delay:1.00s"><tspan class="label">NOW   </tspan><tspan dx="20" class="value">Building reliable agentic AI systems</tspan></text>
+<text x="54" y="480" class="sub">datachulee@github:~$</text>
+<rect x="278" y="463" width="12" height="21" class="cursor"/>
+</svg>
