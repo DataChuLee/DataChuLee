@@ -32,40 +32,57 @@ def stats(days):
 
 def heatmap(days):
     total, _, _ = stats(days)
-    by_date = {item["date"]: item for item in days}
     start = date.fromisoformat(days[0]["date"])
     start -= timedelta(days=(start.weekday()+1) % 7)
     end = date.fromisoformat(days[-1]["date"])
     weeks = (end-start).days//7+1
-    width, height = 1720, 340
-    cell, gap = 22, 7
-    left, top = 80, 104
-    parts = panel(width, height, "datachulee@github: ~$ ./contributions.sh",
-                  "DataChuLee's GitHub contributions", f"{total:,} contributions from {days[0]['date']} to {days[-1]['date']}.")
-    parts.append(label(30, 76, "GitHub contribution activity", 22, TEXT))
+    # Match the reference's current borderless calendar and pop/flash reveal.
+    # Its older render_heatmap_svg.py still draws a terminal window; the live
+    # reference profile instead uses scripts/generate_streak_svg.py.
+    cell, gap, left, top = 13, 3, 34, 24
+    step = cell + gap
+    width, height = left + weeks*step + 6, top + 7*step + 22
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc" '
+        'font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">',
+        '<title id="title">DataChuLee\'s GitHub contribution activity</title>',
+        f'<desc id="desc">{total:,} contributions from {days[0]["date"]} to {days[-1]["date"]}. '
+        'Cells reveal diagonally; active cells briefly brighten.</desc>',
+    ]
+    if STATIC:
+        parts.append('<style>.lbl{fill:#7d8590;font-size:13px;font-weight:600}'
+                     '.total{fill:#e6edf3;font-size:15px;font-weight:700}.c{opacity:1}</style>')
+    else:
+        parts.append('<style>\n'
+                     '.lbl{fill:#7d8590;font-size:13px;font-weight:600}\n'
+                     '.total{fill:#e6edf3;font-size:15px;font-weight:700}\n'
+                     '.c{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .55s ease-out both}\n'
+                     '.g{animation:pop .55s ease-out both,flash .7s ease-out both}\n'
+                     '@keyframes pop{0%{opacity:0;transform:scale(.2)}60%{opacity:1;transform:scale(1.1)}100%{opacity:1;transform:scale(1)}}\n'
+                     '@keyframes flash{0%{filter:brightness(2.4)}45%{filter:brightness(2.4)}100%{filter:brightness(1)}}\n'
+                     '@media(prefers-reduced-motion:reduce){.c{opacity:1!important;animation:none!important}}\n'
+                     '</style>')
     month = None
     for week in range(weeks):
         day = start + timedelta(days=week*7)
         if day.month != month:
-            parts.append(label(left+week*(cell+gap), 92, day.strftime("%b"), 15, DIM))
+            parts.append(label(left+week*step, 16, day.strftime("%b"), extra='class="lbl"'))
             month = day.month
     for row, name in [(1,"Mon"), (3,"Wed"), (5,"Fri")]:
-        parts.append(label(27, top+row*(cell+gap)+17, name, 14, DIM))
+        parts.append(label(2, top+row*step+cell-2, name, extra='class="lbl"'))
+    max_order = max(1, weeks-1+6*.55)
     for item in days:
         day = date.fromisoformat(item["date"])
         offset = (day-start).days
         week, row = divmod(offset, 7)
-        color = PALETTE[min(4, max(0, item["level"]))]
-        delay = week*.022 + row*.018
-        animate = "" if STATIC else (f'<animate attributeName="opacity" from="0" to="1" begin="{delay:.3f}s" dur=".3s" fill="freeze"/>')
-        opacity = 1 if STATIC else 0
-        parts.append(f'<rect x="{left+week*(cell+gap)}" y="{top+row*(cell+gap)}" width="{cell}" height="{cell}" '
-                     f'rx="4" fill="{color}" opacity="{opacity}"><title>{item["date"]}: {item["count"]} contributions</title>{animate}</rect>')
-    parts.append(label(30, 321, f"{total:,} contributions · {days[0]['date']} — {days[-1]['date']}", 17, DIM))
-    parts.append(label(1450, 321, "Less", 15, DIM))
-    for i, color in enumerate(PALETTE):
-        parts.append(f'<rect x="{1497+i*25}" y="306" width="19" height="19" rx="3" fill="{color}"/>')
-    parts.append(label(1630, 321, "More", 15, DIM))
+        level = min(4, max(0, item["level"]))
+        delay = (week+row*.55)/max_order*3.6
+        cls = "c g" if level else "c e"
+        parts.append(f'<rect class="{cls}" x="{left+week*step}" y="{top+row*step}" width="{cell}" height="{cell}" '
+                     f'rx="2.5" fill="{PALETTE[level]}" style="animation-delay:{delay:.3f}s">'
+                     f'<title>{item["date"]}: {item["count"]} contributions</title></rect>')
+    parts.append(label(left, height-6, f"{total:,} contributions in the last year", extra='class="total"'))
     write_svg("contribution.svg", parts)
 
 
