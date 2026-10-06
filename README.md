@@ -29,33 +29,45 @@
 
 <h3>Tech Stack</h3>
 
-<p><b>AI &amp; RAG</b></p>
+<p><b>AI &amp; Agents</b></p>
 <p>
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&amp;logo=langchain&amp;logoColor=white" alt="LangChain" />
-  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&amp;logo=langgraph&amp;logoColor=white" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/FAISS-4B8BBE?style=flat-square" alt="FAISS" />
+  <img src="./assets/tech/langchain.svg" height="28" alt="LangChain" />
+  <img src="./assets/tech/langgraph.svg" height="28" alt="LangGraph" />
+  <img src="./assets/tech/openai-api.svg" height="28" alt="OpenAI API" />
+</p>
+
+<p><b>Search &amp; Retrieval</b></p>
+<p>
+  <img src="./assets/tech/faiss.svg" height="28" alt="FAISS — vector-search library" />
+  <img src="./assets/tech/chroma.svg" height="28" alt="Chroma" />
+  <img src="./assets/tech/bm25.svg" height="28" alt="BM25 — keyword-ranking algorithm" />
+</p>
+
+<p><b>Evaluation &amp; Observability</b></p>
+<p>
+  <img src="./assets/tech/langsmith.svg" height="28" alt="LangSmith" />
 </p>
 
 <p><b>Backend &amp; Data</b></p>
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&amp;logo=mysql&amp;logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" alt="Redis" />
+  <img src="./assets/tech/python.svg" height="28" alt="Python" />
+  <img src="./assets/tech/fastapi.svg" height="28" alt="FastAPI" />
+  <img src="./assets/tech/postgresql.svg" height="28" alt="PostgreSQL" />
+  <img src="./assets/tech/mysql.svg" height="28" alt="MySQL" />
+  <img src="./assets/tech/redis.svg" height="28" alt="Redis" />
 </p>
 
 <p><b>Tools &amp; Infra</b></p>
 <p>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub" />
+  <img src="./assets/tech/docker.svg" height="28" alt="Docker" />
+  <img src="./assets/tech/git.svg" height="28" alt="Git" />
+  <img src="./assets/tech/github.svg" height="28" alt="GitHub" />
 </p>
 
 <p><b>AI Coding Tools</b></p>
 <p>
-  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&amp;logo=claude&amp;logoColor=white" alt="Claude Code" />
-  <img src="https://img.shields.io/badge/Codex-0D1117?style=flat-square" alt="Codex" />
+  <img src="./assets/tech/claudecode.svg" height="28" alt="Claude Code" />
+  <img src="./assets/tech/codex.svg" height="28" alt="Codex" />
 </p>
 
 <br>
