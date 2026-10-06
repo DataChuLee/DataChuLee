@@ -21,7 +21,7 @@
 <p><b>AI Engineer | AI Agents, RAG &amp; Ontology</b></p>
 
 <p>
-  <a href="#featured-projects"><img src="https://img.shields.io/badge/Portfolio-Featured_Projects-0d1117?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Portfolio — featured projects below" /></a>
+  <a href="https://flashy-newsstand-adf.notion.site/Portfolio-ceaad467c4ac83ca867f812dd7fe31f4"><img src="https://img.shields.io/badge/Portfolio-Notion-0d1117?style=for-the-badge&amp;logo=notion&amp;logoColor=white" alt="Portfolio — Notion" /></a>
   <a href="mailto:qasd132@khu.ac.kr"><img src="https://img.shields.io/badge/Email-qasd132%40khu.ac.kr-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email qasd132@khu.ac.kr" /></a>
 </p>
 
@@ -47,7 +47,10 @@
 <a name="featured-projects"></a>
 <h3 align="center">Featured Projects</h3>
 
-| 프로젝트 | 주요 성과 | 링크 |
+| 프로젝트 | 소개 | 링크 |
 | --- | --- | --- |
-| **Buyer Agent** | **96.83%** constraint accuracy / **3.38×** faster response | [코드](https://github.com/DataChuLee/BuyerAgent_LangGraph) |
-| **JarvisJust** | **12.59s → 10.85s** average latency (**−13.8%**) | [자료 요청](mailto:qasd132@khu.ac.kr?subject=JarvisJust%20project%20details) |
+| **Archione** | 온톨로지와 규칙 엔진으로 건축 인허가 요건을 검토하고, 법령 근거와 산정 수치를 제공하는 서비스. | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80b09313f53ccff7f471) |
+| **Buyer Agent** | 판매처·가격·지면·사이즈 조건에 맞는 축구화를 검색하고 비교하는 RAG 기반 구매 의사결정 지원 에이전트. | [상세 보기](https://flashy-newsstand-adf.notion.site/3c5ad467c4ac8052a015cecb416f0891) |
+| **JarvisJust** | RAG 기반 대화형 매칭 서비스로, 검색 결과 필터링과 파이프라인 개선을 통해 응답 속도를 최적화한 프로젝트. | [상세 보기](https://flashy-newsstand-adf.notion.site/32fad467c4ac816e9d37e30a758457cc) |
+| **BBQ Menu & CS** | 사용자 조건에 맞는 BBQ 메뉴 추천과 FAQ·처리 가이드 기반 고객 문의 응대를 제공하는 RAG 서비스. | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80a28d0ac493d050ab21) |
+| **청년수당** | 안내책자 PDF를 바탕으로 신청·사용·증빙 관련 질문에 답변과 출처를 제공하는 정책 안내 AI 어시스턴트. | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80e989d0db4e2b9a9fa4) |
