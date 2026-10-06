@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="880" viewBox="0 0 840 880" role="img" aria-labelledby="title desc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<title id="title">DataChuLee&#x27;s GitHub activity statistics</title><desc id="desc">505 contributions, current streak 1 days, longest streak 6 days.</desc>
+<rect width="840" height="880" rx="12" fill="#0d1117"/>
+<rect x=".5" y=".5" width="839" height="879" rx="12" fill="none" stroke="#30363d"/>
+<path d="M0 36 H840" stroke="#30363d"/>
+<circle cx="20" cy="18" r="5" fill="#ff5f56"/>
+<circle cx="36" cy="18" r="5" fill="#ffbd2e"/>
+<circle cx="52" cy="18" r="5" fill="#27c93f"/>
+<text x="420.0" y="22" text-anchor="middle" fill="#8b949e" font-size="12">datachulee@github: ~$ ./stats.sh</text>
+<style>@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.reveal{animation:reveal .5s ease both}@media(prefers-reduced-motion:reduce){.reveal{animation:none}}</style>
+<g class="reveal">
+<text x="42" y="94" font-size="26" fill="#7ee787" >DataChuLee@github</text>
+<text x="42" y="121" font-size="14" fill="#8b949e" >ACTIVITY / PUBLIC CONTRIBUTIONS</text>
+<text x="42" y="204" font-size="70" fill="#c9d1d9" >505</text>
+<text x="42" y="238" font-size="20" fill="#8b949e" >contributions in the calendar</text>
+</g>
+<g class="reveal" style="animation-delay:0.20s">
+<rect x="42" y="280" width="238" height="142" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="60" y="311" font-size="14" fill="#58a6ff" >CURRENT STREAK</text>
+<text x="60" y="365" font-size="32" fill="#c9d1d9" >1 day</text>
+<text x="60" y="397" font-size="12" fill="#8b949e" >today or yesterday</text>
+</g>
+<g class="reveal" style="animation-delay:0.32s">
+<rect x="297" y="280" width="238" height="142" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="315" y="311" font-size="14" fill="#58a6ff" >LONGEST STREAK</text>
+<text x="315" y="365" font-size="32" fill="#c9d1d9" >6 days</text>
+<text x="315" y="397" font-size="12" fill="#8b949e" >within this calendar</text>
+</g>
+<g class="reveal" style="animation-delay:0.44s">
+<rect x="552" y="280" width="238" height="142" rx="10" fill="#161b22" stroke="#30363d"/>
+<text x="570" y="311" font-size="14" fill="#58a6ff" >ACTIVE DAYS</text>
+<text x="570" y="365" font-size="32" fill="#c9d1d9" >34</text>
+<text x="570" y="397" font-size="12" fill="#8b949e" >days with contributions</text>
+</g>
+<g class="reveal" style="animation-delay:.65s">
+<text x="42" y="477" font-size="16" fill="#58a6ff" >MONTHLY CONTRIBUTIONS</text>
+<text x="42" y="505" font-size="13" fill="#8b949e" >12 calendar months · latest month may be partial</text>
+<rect x="55" y="710.00" width="35" height="2.00" rx="4" fill="#238636"/>
+<text x="72.5" y="695.0" font-size="12" fill="#8b949e" text-anchor="middle">0</text>
+<text x="72.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Nov</text>
+<rect x="116" y="710.00" width="35" height="2.00" rx="4" fill="#238636"/>
+<text x="133.5" y="695.0" font-size="12" fill="#8b949e" text-anchor="middle">0</text>
+<text x="133.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Dec</text>
+<rect x="177" y="669.81" width="35" height="40.19" rx="4" fill="#238636"/>
+<text x="194.5" y="654.8067632850242" font-size="12" fill="#8b949e" text-anchor="middle">52</text>
+<text x="194.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Jan</text>
+<rect x="238" y="641.21" width="35" height="68.79" rx="4" fill="#238636"/>
+<text x="255.5" y="626.207729468599" font-size="12" fill="#8b949e" text-anchor="middle">89</text>
+<text x="255.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Feb</text>
+<rect x="299" y="655.89" width="35" height="54.11" rx="4" fill="#238636"/>
+<text x="316.5" y="640.8937198067633" font-size="12" fill="#8b949e" text-anchor="middle">70</text>
+<text x="316.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Mar</text>
+<rect x="360" y="660.53" width="35" height="49.47" rx="4" fill="#238636"/>
+<text x="377.5" y="645.5314009661836" font-size="12" fill="#8b949e" text-anchor="middle">64</text>
+<text x="377.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Apr</text>
+<rect x="421" y="550.00" width="35" height="160.00" rx="4" fill="#238636"/>
+<text x="438.5" y="535.0" font-size="12" fill="#8b949e" text-anchor="middle">207</text>
+<text x="438.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">May</text>
+<rect x="482" y="710.00" width="35" height="2.00" rx="4" fill="#238636"/>
+<text x="499.5" y="695.0" font-size="12" fill="#8b949e" text-anchor="middle">0</text>
+<text x="499.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Jun</text>
+<rect x="543" y="710.00" width="35" height="2.00" rx="4" fill="#238636"/>
+<text x="560.5" y="695.0" font-size="12" fill="#8b949e" text-anchor="middle">0</text>
+<text x="560.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Jul</text>
+<rect x="604" y="707.68" width="35" height="2.32" rx="4" fill="#238636"/>
+<text x="621.5" y="692.6811594202899" font-size="12" fill="#8b949e" text-anchor="middle">3</text>
+<text x="621.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Aug</text>
+<rect x="665" y="710.00" width="35" height="2.00" rx="4" fill="#238636"/>
+<text x="682.5" y="695.0" font-size="12" fill="#8b949e" text-anchor="middle">0</text>
+<text x="682.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Sep</text>
+<rect x="726" y="694.54" width="35" height="15.46" rx="4" fill="#7ee787"/>
+<text x="743.5" y="679.5410628019324" font-size="12" fill="#8b949e" text-anchor="middle">20</text>
+<text x="743.5" y="738" font-size="12" fill="#8b949e" text-anchor="middle">Oct</text>
+<text x="42" y="782" font-size="16" fill="#c9d1d9" >Best day: 205 contributions</text>
+<text x="42" y="810" font-size="14" fill="#8b949e" >Calendar: 2025-10-05 — 2026-10-06</text>
+</g>
+<path d="M0 850 H840" stroke="#30363d"/>
+<text x="20" y="870" font-size="13" fill="#8b949e" >Source: GitHub public calendar · refreshed daily</text>
+</svg>

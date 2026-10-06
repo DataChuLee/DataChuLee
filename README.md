@@ -1,6 +1,24 @@
 <div align="center">
 
-<img src="./assets/terminal-profile.svg" width="100%" alt="DataChuLee terminal profile" />
+<h3><code>datachulee@github ~ $ ./contributions.sh</code></h3>
+
+<img src="./assets/contribution.svg" width="860" alt="DataChuLee's animated GitHub contribution calendar — refreshed daily" />
+
+<br>
+<br>
+
+<h3><code>datachulee@github ~ $ whoami</code></h3>
+
+<table>
+<tr>
+<td valign="top"><img src="./assets/ascii-profile.svg" width="420" alt="DataChuLee's current GitHub avatar rendered as a self-typing ASCII portrait" /></td>
+<td valign="top"><img src="./assets/stats.svg" width="420" alt="DataChuLee's contribution totals, streaks, and monthly activity" /></td>
+</tr>
+</table>
+
+<br>
+
+<p><b>AI Engineer · AI Agent · RAG</b></p>
 
 </div>
 
