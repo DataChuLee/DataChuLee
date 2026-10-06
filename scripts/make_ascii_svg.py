@@ -36,10 +36,10 @@ def make_portrait(image):
                   "DataChuLee's ASCII portrait", "Current GitHub avatar revealed row by row as monochrome ASCII art.")
     duration = 5.8/rows
     for row, line in enumerate(lines):
-        top = 43 + row*cell_height
+        top = 37 + row*cell_height
         delay = row*duration
-        content = (f'<text xml:space="preserve" x="20" y="{top+cell_height*.8:.3f}" fill="{TEXT}" '
-                   f'font-size="{cell_height*.85:.3f}" textLength="800" lengthAdjust="spacingAndGlyphs">{escape(line)}</text>')
+        content = (f'<text xml:space="preserve" x="20" y="{top+cell_height*.74:.3f}" fill="{TEXT}" '
+                   f'font-size="{cell_height*.86:.3f}" textLength="800" lengthAdjust="spacing">{escape(line)}</text>')
         if STATIC:
             parts.append(content)
         else:
@@ -47,12 +47,17 @@ def make_portrait(image):
                          f'<animate attributeName="width" from="0" to="800" begin="{delay:.4f}s" '
                          f'dur="{duration:.4f}s" fill="freeze"/></rect></clipPath>')
             parts.append(f'<g clip-path="url(#row-{row})">{content}</g>')
-            parts.append(f'<rect y="{top:.3f}" width="{cell_width:.3f}" height="{cell_height:.3f}" fill="{TEXT}" opacity="0">'
+            parts.append(f'<rect y="{top+1:.3f}" width="{cell_width:.3f}" height="{cell_height-2:.3f}" fill="{TEXT}" opacity="0">'
                          f'<animate attributeName="x" from="20" to="820" begin="{delay:.4f}s" dur="{duration:.4f}s" fill="freeze"/>'
                          f'<set attributeName="opacity" to=".85" begin="{delay:.4f}s"/>'
                          f'<set attributeName="opacity" to="0" begin="{delay+duration:.4f}s"/></rect>')
-    parts += [f'<path d="M0 850 H840" stroke="{BORDER}"/>',
-              label(20, 870, "datachulee@github:~$ whoami  DataChuLee", 13, DIM)]
+    parts += [f'<path d="M0 837 H840" stroke="{BORDER}"/>',
+              f'<text x="20" y="856" font-size="13" fill="{DIM}">datachulee@github:~$ whoami '
+              f'<tspan fill="{TEXT}">DataChuLee</tspan></text>']
+    cursor_x = 20 + len("datachulee@github:~$ whoami DataChuLee ")*13*.6
+    cursor_animation = '' if STATIC else ('<animate attributeName="opacity" values="1;1;0;0" '
+                                         'keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>')
+    parts.append(f'<rect x="{cursor_x:.1f}" y="844" width="8" height="14" fill="{TEXT}">{cursor_animation}</rect>')
     write_svg("ascii-profile.svg", parts)
 
 

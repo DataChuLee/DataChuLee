@@ -13,7 +13,7 @@ STATIC = os.environ.get("STATIC") == "1"
 BG = "#0d1117"
 BORDER = "#30363d"
 TEXT = "#c9d1d9"
-DIM = "#8b949e"
+DIM = "#7d8590"
 GREEN = "#7ee787"
 BLUE = "#58a6ff"
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
@@ -29,13 +29,16 @@ def panel(width, height, command, title, description):
         f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc" '
         'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
         f'<title id="title">{escape(title)}</title><desc id="desc">{escape(description)}</desc>',
-        f'<rect width="{width}" height="{height}" rx="12" fill="{BG}"/>',
+        '<defs><linearGradient id="panel-bg" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="{BG}"/>'
+        '</linearGradient></defs>',
+        f'<rect width="{width}" height="{height}" rx="12" fill="url(#panel-bg)"/>',
         f'<rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="12" fill="none" stroke="{BORDER}"/>',
-        f'<path d="M0 36 H{width}" stroke="{BORDER}"/>',
-        '<circle cx="20" cy="18" r="5" fill="#ff5f56"/>',
-        '<circle cx="36" cy="18" r="5" fill="#ffbd2e"/>',
-        '<circle cx="52" cy="18" r="5" fill="#27c93f"/>',
-        f'<text x="{width/2}" y="22" text-anchor="middle" fill="{DIM}" font-size="12">{escape(command)}</text>',
+        f'<path d="M0 30 H{width}" stroke="{BORDER}"/>',
+        '<circle cx="20" cy="15" r="5" fill="#ff5f56"/>',
+        '<circle cx="36" cy="15" r="5" fill="#ffbd2e"/>',
+        '<circle cx="52" cy="15" r="5" fill="#27c93f"/>',
+        f'<text x="{width/2}" y="19" text-anchor="middle" fill="{DIM}" font-size="12">{escape(command)}</text>',
     ]
 
 

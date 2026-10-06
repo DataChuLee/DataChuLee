@@ -1,9 +1,9 @@
 """Generate the contribution heatmap and a matching activity statistics card."""
-from collections import defaultdict
 from datetime import date, timedelta
 import json
 
-from profile_common import ASSETS, BLUE, BORDER, DIM, GREEN, PALETTE, STATIC, TEXT, label, panel, today, write_svg
+from profile_common import ASSETS, PALETTE, STATIC, label, today, write_svg
+from profile_stats import render_stats_card
 
 
 def read_days():
@@ -87,52 +87,7 @@ def heatmap(days):
 
 
 def stats_card(days):
-    total, current, best = stats(days)
-    active = sum(item["count"] > 0 for item in days)
-    best_day = max(item["count"] for item in days)
-    width, height = 840, 880
-    parts = panel(width, height, "datachulee@github: ~$ ./stats.sh",
-                  "DataChuLee's GitHub activity statistics",
-                  f"{total:,} contributions, current streak {current} days, longest streak {best} days.")
-    if not STATIC:
-        parts.append('<style>@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}'
-                     '.reveal{animation:reveal .5s ease both}@media(prefers-reduced-motion:reduce){.reveal{animation:none}}</style>')
-    parts.append('<g class="reveal">')
-    parts += [label(42, 94, "DataChuLee@github", 26, GREEN),
-              label(42, 121, "ACTIVITY / PUBLIC CONTRIBUTIONS", 14, DIM),
-              label(42, 204, f"{total:,}", 70, TEXT),
-              label(42, 238, "contributions in the calendar", 20, DIM), '</g>']
-    for index, (name, value, detail) in enumerate([
-        ("CURRENT STREAK", f"{current} {'day' if current == 1 else 'days'}", "today or yesterday"),
-        ("LONGEST STREAK", f"{best} {'day' if best == 1 else 'days'}", "within this calendar"),
-        ("ACTIVE DAYS", str(active), "days with contributions"),
-    ]):
-        x = 42 + index*255
-        parts.append(f'<g class="reveal" style="animation-delay:{.2+index*.12:.2f}s">')
-        parts += [f'<rect x="{x}" y="280" width="238" height="142" rx="10" fill="#161b22" stroke="{BORDER}"/>',
-                  label(x+18, 311, name, 14, BLUE), label(x+18, 365, value, 32, TEXT),
-                  label(x+18, 397, detail, 12, DIM), '</g>']
-    monthly = defaultdict(int)
-    for item in days:
-        monthly[item["date"][:7]] += item["count"]
-    months = sorted(monthly)[-12:]
-    max_value = max((monthly[m] for m in months), default=0) or 1
-    parts.append('<g class="reveal" style="animation-delay:.65s">')
-    parts += [label(42, 477, "MONTHLY CONTRIBUTIONS", 16, BLUE),
-              label(42, 505, "12 calendar months · latest month may be partial", 13, DIM)]
-    for i, month in enumerate(months):
-        x = 55+i*61
-        bar_height = 160*monthly[month]/max_value
-        value = monthly[month]
-        parts.append(f'<rect x="{x}" y="{710-bar_height:.2f}" width="35" height="{max(bar_height,2):.2f}" rx="4" fill="{GREEN if i==len(months)-1 else '#238636'}"/>')
-        parts += [label(x+17.5, 695-bar_height, str(value), 12, DIM, 'text-anchor="middle"'),
-                  label(x+17.5, 738, date.fromisoformat(month+"-01").strftime("%b"), 12, DIM, 'text-anchor="middle"')]
-    parts += [label(42, 782, f"Best day: {best_day:,} contributions", 16, TEXT),
-              label(42, 810, f"Calendar: {days[0]['date']} — {days[-1]['date']}", 14, DIM), '</g>',
-              f'<path d="M0 850 H840" stroke="{BORDER}"/>',
-              label(20, 870, "Source: GitHub public calendar · refreshed daily", 13, DIM)]
-    write_svg("stats.svg", parts)
-
+    render_stats_card(days, stats(days))
 
 if __name__ == "__main__":
     days = read_days()
