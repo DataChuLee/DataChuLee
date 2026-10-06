@@ -33,7 +33,6 @@
 <p>
   <img src="./assets/tech/langchain.svg" height="28" alt="LangChain" />
   <img src="./assets/tech/langgraph.svg" height="28" alt="LangGraph" />
-  <img src="./assets/tech/openai-api.svg" height="28" alt="OpenAI API" />
 </p>
 
 <p><b>Search &amp; Retrieval</b></p>
