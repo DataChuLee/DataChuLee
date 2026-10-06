@@ -9,7 +9,7 @@ All badges are 28 px high, self-contained SVGs. Brand artwork is scaled proporti
 - OpenAI API: OpenAI symbol from Lobe Icons.
 - Claude Code: Simple Icons `claudecode` symbol (the pixel mascot), replacing the generic Claude symbol.
 - Python, FastAPI, PostgreSQL, MySQL, Redis, Docker, Git and GitHub: Simple Icons.
-- **FAISS** uses Tabler's generic `vector` symbol; it is a visual cue for vector search, **not an official FAISS logo**.
+- **FAISS**: logo published on Meta's official engineering site, https://engineering.fb.com/wp-content/uploads/2017/03/faiss_logo.png , also used in https://engineering.fb.com/2025/05/08/data-infrastructure/accelerating-gpu-indexes-in-faiss-with-nvidia-cuvs/ . The original PNG is embedded without cropping or recoloring and scaled proportionally.
 - **BM25** uses Tabler's generic `search` symbol; it represents keyword retrieval, **not a product logo**. BM25 is a ranking algorithm.
 
 The icons identify tools used by the profile owner; they do not imply sponsorship or endorsement. All brand marks belong to their respective owners.
@@ -18,7 +18,6 @@ The icons identify tools used by the profile owner; they do not imply sponsorshi
 
 - codex: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/codex.svg (Git blob 4c648aff4a9188c36d32a706f1aa7813b8992f2c)
 - openai: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/openai.svg (Git blob 78caf4fa20ffb0ae8ebefd74408871c11c1c7fd2)
-- vector: https://github.com/tabler/tabler-icons/blob/main/icons/outline/vector.svg (Git blob 27c24f60240d4abe19a5e6971b08533e5a805d57)
 - search: https://github.com/tabler/tabler-icons/blob/main/icons/outline/search.svg (Git blob e894f96200eb75972169fc7c58be7df14ecb8645)
 - python: https://github.com/simple-icons/simple-icons/blob/develop/icons/python.svg (Git blob 30587d8164a94862e28dac7c0f44578934294769)
 - fastapi: https://github.com/simple-icons/simple-icons/blob/develop/icons/fastapi.svg (Git blob ba6ba86ab82c108aad4259a9548494796345bcce)
@@ -58,7 +57,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-### Tabler Icons (generic vector and search symbols)
+### Tabler Icons (generic search symbol)
 
 MIT License
 
