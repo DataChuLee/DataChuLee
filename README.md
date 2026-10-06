@@ -29,15 +29,33 @@
 
 <h3>Tech Stack</h3>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,docker,git,github,mysql,postgres,fastapi" alt="Python, Docker, Git, GitHub, MySQL, PostgreSQL, FastAPI" />
-</p>
-
+<p><b>AI &amp; RAG</b></p>
 <p>
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&amp;logo=langchain&amp;logoColor=white" alt="LangChain" />
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&amp;logo=langgraph&amp;logoColor=white" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/FAISS-Vector_Search-4B8BBE?style=flat-square" alt="FAISS vector search" />
+  <img src="https://img.shields.io/badge/FAISS-4B8BBE?style=flat-square" alt="FAISS" />
+</p>
+
+<p><b>Backend &amp; Data</b></p>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&amp;logo=mysql&amp;logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" alt="Redis" />
+</p>
+
+<p><b>Tools &amp; Infra</b></p>
+<p>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub" />
+</p>
+
+<p><b>AI Coding Tools</b></p>
+<p>
+  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&amp;logo=claude&amp;logoColor=white" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/Codex-0D1117?style=flat-square" alt="Codex" />
 </p>
 
 <br>
