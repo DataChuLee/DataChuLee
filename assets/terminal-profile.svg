@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780">
+<rect width="100%" height="100%" rx="16" fill="#0d1117" stroke="#30363d"/>
+<text x="42" y="80" fill="#7ee787" font-family="monospace" font-size="22">datachulee@github:~$ ./profile.sh</text>
+<text x="42" y="125" fill="#8b949e" font-family="monospace" font-size="16">Run GitHub Action once to generate the full animated terminal profile.</text>
+</svg>
