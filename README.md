@@ -49,8 +49,8 @@
 
 | 프로젝트 | 소개 | 링크 |
 | --- | --- | --- |
-| **Archione** | 온톨로지와 규칙 엔진으로 건축 인허가 요건을 검토하고, 법령 근거와 산정 수치를 제공하는 서비스. | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80b09313f53ccff7f471) |
-| **Buyer Agent** | 판매처·가격·지면·사이즈 조건에 맞는 축구화를 검색하고 비교하는 RAG 기반 구매 의사결정 지원 에이전트. | [상세 보기](https://flashy-newsstand-adf.notion.site/3c5ad467c4ac8052a015cecb416f0891) |
-| **JarvisJust** | RAG 기반 대화형 매칭 서비스로, 검색 결과 필터링과 파이프라인 개선을 통해 응답 속도를 최적화한 프로젝트. | [상세 보기](https://flashy-newsstand-adf.notion.site/32fad467c4ac816e9d37e30a758457cc) |
-| **BBQ Menu & CS** | 사용자 조건에 맞는 BBQ 메뉴 추천과 FAQ·처리 가이드 기반 고객 문의 응대를 제공하는 RAG 서비스. | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80a28d0ac493d050ab21) |
-| **청년수당** | 안내책자 PDF를 바탕으로 신청·사용·증빙 관련 질문에 답변과 출처를 제공하는 정책 안내 AI 어시스턴트. | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80e989d0db4e2b9a9fa4) |
+| **Archione** | 건폐율·용적률 등 건축 인허가 요건을 검토하고, 근거 조문과 계산 결과를 보여주는 서비스 | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80b09313f53ccff7f471) |
+| **Buyer Agent** | 가격·사이즈 등 원하는 조건에 맞는 축구화를 찾아 비교해주는 AI 에이전트 | [상세 보기](https://flashy-newsstand-adf.notion.site/3c5ad467c4ac8052a015cecb416f0891) |
+| **JarvisJust** | RAG 기반 대화형 매칭 서비스 | [상세 보기](https://flashy-newsstand-adf.notion.site/32fad467c4ac816e9d37e30a758457cc) |
+| **BBQ Menu & CS** | BBQ 메뉴 추천과 고객 문의 응대를 위한 AI 챗봇 | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80a28d0ac493d050ab21) |
+| **청년수당** | 청년수당 신청 조건과 사용 방법을 안내책자에서 찾아 답하는 AI 챗봇 | [상세 보기](https://flashy-newsstand-adf.notion.site/3bcad467c4ac80e989d0db4e2b9a9fa4) |
